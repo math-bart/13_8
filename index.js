@@ -28,8 +28,8 @@ server.on('request', function (request, response) {
     response.write(data);
     response.end();
 	});*/
-	});
-	}
+    });
+  }
 });
 
 server.listen(8080);
