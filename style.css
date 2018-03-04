@@ -1,0 +1,88 @@
+.container {
+	width: 480px;
+	height: 150px;
+	background-color: #00CED1;
+	border: 3px solid black;
+}
+
+.star {
+	display: inline-block;
+	margin: 2em;
+	transform: rotate(22deg);
+	
+}
+
+.star::before {
+	content:"";
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	background-color: white;
+	transform: rotate(45deg);	
+}
+
+.star, .star:before, i.fa {
+	width: 70px;
+	height: 70px;
+}
+
+.star1 {
+	border: 5px solid yellow;
+}
+
+.star1::before {
+	border: 5px solid yellow;
+}
+
+.star2 {
+	border: 5px solid orange;
+}
+
+.star2::before {
+	border: 5px solid orange;
+}
+
+.star3 {
+	border: 5px solid blue;
+}
+
+.star3::before {
+	border: 5px solid blue;
+}
+
+
+.fa { 
+	margin: 0;
+	position: absolute; 
+	background-color: white;
+	font-size: 50px;
+}
+
+
+.fa:before { 
+	margin: 10px;
+	position: absolute; 
+	transform: rotate(-22deg);
+}
+
+.star1:hover, .star1:hover i, .star1:hover::before {
+	transition: ease-in-out;
+	background-color: yellow;
+	color: white;
+}
+
+.star2:hover, .star2:hover i, .star2:hover::before {
+	background-color: orange;
+	color: white;
+}
+
+.star3:hover, .star3:hover i, .star3:hover::before {
+	background-color: blue;
+	color: white;
+}
+
+.star1, .star1::before, .star1 i.fa, .star2, .star2::before, .star2 i.fa, .star3, .star3::before, .star3 i.fa {
+	transition: background-color .3s ease-in-out;
+}
+
+
